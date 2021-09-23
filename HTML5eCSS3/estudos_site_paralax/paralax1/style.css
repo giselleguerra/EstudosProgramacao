@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding:0;
+
+}
+.header {
+  background-image: url(../paralax1/img/7.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: whitesmoke;
+  padding-top: 300px;
+  padding-bottom: 300px;
+}
+
+.content {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.imgSite {
+  background-image: url(../paralax1/img/3.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  color: whitesmoke;
+}
+
+.footer {
+  background-color: #323232;
+  color: whitesmoke;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.img{
+    width: 600px;
+    padding:10% 10% 3% 10%;
+
+}

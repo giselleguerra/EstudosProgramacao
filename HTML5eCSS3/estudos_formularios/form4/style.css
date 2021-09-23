@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url(andras-vas-Bd7gNnWJBkU-unsplash.jpg);
+  margin: 40px;
+  font-size: 1em;
+  color: whitesmoke;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+.conteudo {
+  background: linear-gradient(120deg, #e75590, #00c2cb) 0.6;
+  border-radius: 5px;
+  text-align: center;
+  height: 900px;
+  padding: 5%;
+  padding-bottom: 10%;
+}
+
+.conteudoForm {
+  min-height: 800px;
+  width: 600px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  padding: 32px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  color: #59429d;
+  margin-left: 70px;
+}
+
+.conteudoTitulo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#titulo {
+  margin-bottom: 32px;
+  color: #ffffff;
+}
+
+#subtitulo {
+  margin-bottom: 32px;
+  color: #ffffff;
+}
+
+fieldset {
+  border: 0;
+}
+
+input,
+select,
+button {
+  border-radius: 5px;
+  border: none;
+}
+
+.campo, .campo2 {
+  margin-bottom: 1em;
+}
+
+.campo, label {
+  margin-bottom: 0.2em;
+  display: block;
+  padding: 1%;
+}
+
+fieldset.grupo .campo {
+  float: left;
+  margin-right: 1em;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="date"],
+.campo input[type="url"],
+.campo2 input[type="text"],
+.campo2 input[type="email"],
+.campo select {
+  padding: 0.2em;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  display: block;
+}
+
+.campo selec option {
+  padding-right: 1em;
+}
+
+.campo input:focus,
+.campo select:focus {
+  background: #e0e0f8;
+}
+
+.botao {
+  font-size: 1.2em;
+  background: #59429d;
+  border: 0;
+  margin-bottom: 1em;
+  color: #ffffff;
+  padding: 0.2em 0.6em;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.botao:hover {
+  background: #ccbbff;
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: none;
+}
+
+.conteudo {
+  background-color: rgba(111, 55, 148, 0.6);
+  width: 800px;
+  margin: auto;
+}

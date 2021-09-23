@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Formulário </title>
+</head>
+<body>
+    
+    <main class="conteudo">
+         <div class="conteudoTitulos">
+             <h1 id="titulo">Formulário de Candidatura de Emprego</h1>
+             <p id="subtitulo">Obrigado pelo seu interesse em trabalhar conosco, confira as oportunidades de trabalho disponíveis e que atendam aos seus critérios e envie sua candidatura preenchendo o forumário abaixo.</p>
+             <br>
+         </div>
+
+    <form class="conteudoForm">
+
+        <fieldset class="grupo">
+
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input name="nome" id="nome" type="text" placeholder="digite seu nome completo" required>
+            </div>
+
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input name="email" id="email" type="email" placeholder="digite seu email" required>
+            </div>            
+
+        </fieldset>
+
+        <div class="campo">
+
+            <label for="vaga"><strong>Qual posição você está se candidatando?</strong></label>
+            <select id="vaga" required>
+                <option selected disabled="disable" value="">Selecione</option>
+                <option>Atendente</option>
+                <option>Caixa</option>
+                <option>Gerente de loja</option>
+                <option>Estoquista</option>
+            </select>
+
+        </div>
+
+        <div class="campo">
+
+            <label for="data"><strong>Data de início disponível</strong></label>
+            <input id="data" name="data" type="date" placeholder="DD/MM/AAAA" required>
+
+        </div>
+
+        <div class="campo">
+
+            <label for="radio"><strong>Qual a sua situação atual de emprego?</strong></label>
+            <label>
+                <input type="radio" name="situacao" value="empregado" checked>Empregado
+            </label>
+            <label>
+                <input type="radio" name="situacao" value="desempregado">Desempregado
+            </label>
+            <label>
+                <input type="radio" name="situacao" value="autonomo">Autônomo
+            </label>
+            <label>
+                <input type="radio" name="situacao" value="estudante">Estudante
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="curriculo"><strong>LinkedIN</strong></label>
+            <input type="url" name="curriculo" id="curriculo" placeholder="digite a url do seu linkedIn">
+        </div>
+
+            <div class="campo">
+                <label>
+                <strong>Coloque abaixo uma referência:</strong>
+                </label>
+            </div>
+            <div class="campo2">
+                <label for="ref"><strong>Nome</strong></label>
+                <input type="text" name="ref" id="ref" placeholder="nome da sua referência">
+            </div>
+
+            <div class="campo">
+                <label for="email2">
+                    <strong>Email</strong>                
+                </label>
+                <input type="email" name="email2" id="email2" placeholder="email da sua referência">
+            </div>
+
+
+        <button type="submit" class="botao">Enviar</button>
+    </form>
+ 
+    </main>
+
+</body>
+</html>

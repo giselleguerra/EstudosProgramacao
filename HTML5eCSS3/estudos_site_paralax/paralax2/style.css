@@ -1,0 +1,84 @@
+* {
+  font-family: sans-serif;
+}
+
+.header {
+  background-image: url(../paralax2/img/daniel-monteiro-DPe7jm0HEzY-unsplash.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: whitesmoke;
+  padding-top: 300px;
+  padding-bottom: 300px;
+  text-align: center;
+  letter-spacing: 8px;
+}
+
+.header2 {
+  background-image: url(../paralax2/img/daniel-monteiro-DPe7jm0HEzY-unsplash.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: whitesmoke;
+  padding-top: 300px;
+  padding-bottom: 300px;
+}
+
+.header #titulo {
+  background-color: #323232;
+  padding: 20px;
+}
+
+/*cidade beleza*/
+.content1 {
+  background-color: whitesmoke;
+  color: #323232;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+/*cidade beleza*/
+.middleImg1 {
+  background-image: url(../paralax2/img/nathalia-segato-kIZoqXHfoTQ-unsplash.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: whitesmoke;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+/*cidade tech e turistica*/
+.content2 {
+  background-color: #323232;
+  color: whitesmoke;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+/*cidade tech*/
+
+.middleImg2 {
+  background-image: url(../paralax2/img/daniel-monteiro-si9IpVGUn-Y-unsplash.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: whitesmoke;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.footer {
+  background-color: #323232;
+  color: whitesmoke;
+  text-decoration: solid;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  font-size: 16px;
+}
+
+nav {
+  background-color: #ffffff;
+  color: #323232;
+  }

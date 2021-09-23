@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gi Guerra"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-07-13 10:06:17 "/>
+        <attribute name="created" value="R2kgR3VlcnJhO0RFU0tUT1AtOVZDUktINTsyMDIxLTA3LTEzOyIwOTozMTowOCAiOzMwODk="/>
+        <attribute name="edited" value="R2kgR3VlcnJhO0RFU0tUT1AtOVZDUktINTsyMDIxLTA3LTEzOyIxMDowNjoxNyAiOzE7MzE5MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="resultado, numero, expoente" type="Integer" array="False" size=""/>
+            <assign variable="numero" expression="9"/>
+            <assign variable="expoente" expression="1"/>
+            <while expression="expoente&lt;=10">
+                <assign variable="resultado" expression="numero*expoente"/>
+                <output expression="&quot;9 x &quot; &amp; expoente &amp; &quot; = &quot; &amp; resultado" newline="True"/>
+                <assign variable="expoente" expression="expoente+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
