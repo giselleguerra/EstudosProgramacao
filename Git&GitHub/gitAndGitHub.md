@@ -44,5 +44,9 @@ dos EUA).
 * Git Add
 * Git Commit
 * Git clone
-* 
+* Git push
+* ls
+* crtl+l -> limpar a tela
+* git config --global user.email ou user.name
+* Para subir um arquivo criado inicialmente na máquina, deve-se criar um repositório de toda forma no gitHub, e depois apontar a url no bash através do git push
 
