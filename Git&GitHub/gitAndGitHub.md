@@ -48,5 +48,67 @@ dos EUA).
 * ls
 * crtl+l -> limpar a tela
 * git config --global user.email ou user.name
-* Para subir um arquivo criado inicialmente na máquina, deve-se criar um repositório de toda forma no gitHub, e depois apontar a url no bash através do git push
+* Para subir um arquivo criado inicialmente na máquina, deve-se criar um repositório de toda forma no gitHub, e depois apontar a url no bash através do git remote add origin...
+* depois git push origin master/main
 
+
+
+# Chave SSH e Token
+
+###  Chave SSH
+
+É uma forma  estabelecer uma conexão segura e encriptada entre duas máquinas (servidor do GitHub e nossa máquina local, ex.).
+
+* No Git
+
+Account Settings -> SSH and GPG Keys -> SSH Keys -> "Nova chave...."
+
+* No bash:
+
+ssh-keygen -t ed25519 -C email...
+
+* tem que entrar na pasta .ssh
+
+-> cat id_(nome da chave publica)
+
+*  copia a cola no github - salva
+
+*  volta no bash
+
+-> dentro da pasta .ssh
+
+-> eval $(ssh-agent -s)
+
+ele vai voltar: Agent pid (e um número)
+
+depois tem que dar:
+
+-> ssh-add id_ed25519  (a chave privada)
+
+
+
+
+
+## agora quando for clonar um repositório tem que passar o link ssh
+
+
+
+
+
+### Token
+
+* No Git
+
+Account Settings -> Develope Setting -> Personal access tokens -> "Nova chave...."
+
+
+
+ps: salva o token em algum lugar seguro porque depois ele desaparece
+
+
+
+
+
+pra clonar pelo https
+
+e ai quando acionar no bash ele vai te pedir pra colocar o token
