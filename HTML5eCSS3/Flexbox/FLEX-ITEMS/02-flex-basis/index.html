@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos flex-basis</title>
+    <style>
+*{
+    background-color: white;
+    color:black;
+}
+
+.container{
+    max-width: 500px;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item{
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    margin: 5px;
+
+}
+
+.bAuto{
+    flex-basis: auto;
+}
+
+.bzero{
+    flex-basis: 0;
+}
+
+.definido{
+    flex-basis: 60%;
+}
+.fg-1{
+    flex-grow: 1;
+}
+
+.fg-3{
+    flex-grow: 3;
+}
+
+.w100{
+    flex-basis: 100px;
+}
+    </style>
+</head>
+<body>
+<p>basis auto</p>
+    <div class="container">
+        <div class="item bAuto fg-1">Assssssssssss</div>
+        <div class="item bAuto fg-1">BBB</div>
+        <div class="item bAuto fg-3">C</div>
+        <div class="item bAuto fg-1">DEF</div>
+    </div>
+
+    <p>basis zero</p>
+    <div class="container">
+        <div class="item bzero fg-1">Assssssssssss</div>
+        <div class="item bzero fg-1">BBB</div>
+        <div class="item bzero fg-1">C</div>
+        <div class="item bzero fg-1">DEF</div>
+    </div>
+
+    <p>basis + width</p>
+    <div class="container">
+        <div class="item  w100 fg-3">BBB</div>
+        <div class="item w100 fg-3">AssssssssssssssA</div>
+        <div class="item w100 fg-3">CCC</div>
+        <div class="item w100 fg-3">DEF</div>
+        <div class="item w100 fg-3">DEF</div>
+        <div class="item w100 fg-3">DEF</div>
+        <div class="item w100 fg-3">DEF</div>
+        <div class="item w100 fg-3">DEF</div>
+        <div class="item w100 fg-3">DEF</div>
+        <div class="item w100 fg-3">DEF</div>
+        <div class="item w100 fg-3">DEF</div>
+        <div class="item w100 fg-3">DEF</div>
+        <div class="item w100 fg-3">DEF</div>
+        
+    </div>
+
+    
+
+</body>
+</html>

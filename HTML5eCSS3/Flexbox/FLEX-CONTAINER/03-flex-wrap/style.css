@@ -1,0 +1,45 @@
+* {
+  background-color: white;
+  color:black;
+}
+
+.flex{
+  display: flex;
+  height: 200px;
+  border: 2px solid black;
+  max-width: 400px;
+  flex-direction: column;
+}
+
+.item{
+  font-size: 24px;
+  height: 50%;
+  text-align: center;
+  height: 50x;
+  line-height: 50px;
+  min-width: 100px;
+}
+
+.nowrap{
+  flex-wrap: nowrap;
+}
+
+.wrap{
+  flex-wrap: wrap;
+}
+
+.wrap-reverse{
+  flex-wrap: wrap-reverse;
+}
+
+.blue{
+  background-color: blue;
+}
+
+.green{
+  background-color: green;
+}
+
+.orange{
+  background-color: orange;
+} 

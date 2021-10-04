@@ -53,6 +53,32 @@ dos EUA).
 
 
 
+novo
+
+echo "#aprendendo" >> README.md
+
+git init
+
+git add README.md
+
+git commit -m "primeiro commit"
+
+git branch -M main
+
+git remote add origin https://github.com/giselleguerra/aprendendo.git
+
+git push -u origin main
+
+
+
+subindo para um repositório já existente
+
+git remote add origin https://github.com/giselleguerra/aprendendo.git
+
+git branch -M main
+
+git push -u origin main
+
 # Chave SSH e Token
 
 ###  Chave SSH

@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "open sans", sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  max-width: 992px;
+  margin: auto;
+  width: 100%;
+}
+
+.btn {
+  background-color: #122a57;
+  color: #fff;
+  text-align: center;
+  border-radius: 30px;
+  width: 220px;
+  text-decoration: none;
+  height: 30px;
+  display: block;
+  line-height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* HEADER + MENU */
+
+header {
+  background-color: #122a57;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+header .menu {
+  justify-content: space-between;
+}
+
+header .list-items {
+  display: flex;
+  width: 100%;
+  max-width: 250px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+.list-items li a {
+  color: #fff;
+}
+
+
+
+
+/* APRESENTAÇÃO */
+
+.apresentacao {
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.apresentacao .texto-apresentacao {
+  min-height: 200px;
+  color: #122a57;
+}
+
+.texto-apresentacao h1 {
+  color: #122a57;
+  font-size: 32px;
+}
+
+.texto-apresentacao p {
+  font-size: 16px;
+  color: #122a57;
+  margin-bottom: 10px;
+}
+
+/* QUEM SOMOS */
+
+#quem-somos {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.quem-somos-texto {
+  min-height: 200px;
+  color: #122a57;
+}
+
+.quem-somos-texto h2 {
+  color: #122a57;
+  font-size: 32px;
+}
+
+.quem-somos-texto p {
+  font-size: 16px;
+  color: #122a57;
+}
+
+/* SERVIÇOS */
+
+#servicos {
+  display: flex;
+  align-items: center;
+  background-color: #122a57;
+  color: #fff;
+  height: 600px;
+}
+
+#servicos .servicos {
+  display: flex;
+  margin: 20px;
+  width: 100%;
+  justify-content: space-between;
+  padding:50px;
+}
+
+#servicos h2 {
+  color: #fff;
+  font-size: 32px;
+  margin: 100px;
+}
+
+.servicos .servicos-itens {
+  display: flex;
+  align-content: space-between;
+  flex-direction: column;
+  align-content: center;
+}
+
+.servicos .servicos-itens a {
+  text-decoration: none;
+  color: #122a57;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 30%;
+  width: 220px;
+  height: 30px;
+  display: block;
+  line-height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.servicos .servicos-itens p {
+  text-align: center;
+  margin: 10px;
+
+}
+/* PLANOS */
+
+/* FOOTER */

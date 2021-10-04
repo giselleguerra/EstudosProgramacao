@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align-self</title>
+    <style>
+*{
+    background-color: white;
+    color: black;
+}
+
+.container{
+    max-width: 350px;
+    display: flex;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    
+
+}
+
+.column{
+    flex-direction: column;
+}
+
+.align-container{
+    align-items: center;
+}
+
+.item{
+    background-color: brown;
+    color: cornsilk;
+    text-align: center;
+    font-size: 24px;
+    margin: 5px;
+}
+
+.center{
+    align-self: center;
+}
+
+.start{
+    align-self: flex-start;
+}
+
+.end{
+    align-self: flex-end;
+}
+
+.stretch{
+    align-self: stretch;
+}
+
+.baseline{
+    align-self: baseline;
+}
+
+.auto{
+    align-self: auto;
+}
+
+    </style>
+</head>
+<body>
+    <h1>row</h1>
+    <p>align-self: auto / container com align-items:center</p>
+   <section class="container align-container">
+       <div class="item auto">AAA</div>
+       <div class="item auto">123</div>
+       <div class="item auto">Lorem Ipsum blablabla</div>
+       <div class="item auto">Não sei.</div>
+       </section>
+
+       <p>align-self: auto</p>
+       <section class="container">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem Ipsum blablabla</div>
+        <div class="item auto">Não sei.</div>
+        </section>
+
+        <p>align-self: center</p>
+        <section class="container">
+         <div class="item center">AAA</div>
+         <div class="item center">123</div>
+         <div class="item center">Lorem Ipsum blablabla</div>
+         <div class="item center ali">Não sei.</div>
+         </section>
+
+         <p>align-self: flex-start</p>
+        <section class="container">
+         <div class="item start">AAA</div>
+         <div class="item start">123</div>
+         <div class="item start">Lorem Ipsum blablabla</div>
+         <div class="item start">Não sei.</div>
+         </section>
+
+         <p>align-self: flex-end</p>
+        <section class="container">
+         <div class="item end">AAA</div>
+         <div class="item end">123</div>
+         <div class="item end">Lorem Ipsum blablabla</div>
+         <div class="item end">Não sei.</div>
+         </section>
+
+         <p>align-self: stretch</p>
+        <section class="container">
+         <div class="item stretch">AAA</div>
+         <div class="item stretch">123</div>
+         <div class="item stretch">Lorem Ipsum blablabla</div>
+         <div class="item stretch">Não sei.</div>
+         </section>
+
+         <p>align-self: baseline</p>
+         <section class="container">
+          <div class="item baseline">AAA</div>
+          <div class="item baseline">123</div>
+          <div class="item baseline">Lorem Ipsum blablabla</div>
+          <div class="item baseline">Não sei.</div>
+          </section>
+
+          <p>align-self: mix</p>
+          <section class="container">
+           <div class="item strech">AAA</div>
+           <div class="item start">123</div>
+           <div class="item baseline">Lorem Ipsum blablabla</div>
+           <div class="item end">Não</div>
+           </section>
+
+           <h1>column</h1>
+    <p>align-self: auto / container com align-items:center</p>
+   <section class="container align-container column">
+       <div class="item auto">AAA</div>
+       <div class="item auto">123</div>
+       <div class="item auto">Lorem Ipsum blablabla</div>
+       <div class="item auto">Não sei.</div>
+       </section>
+
+       <p>align-self: auto</p>
+       <section class="container column">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem Ipsum blablabla</div>
+        <div class="item auto">Não sei.</div>
+        </section>
+
+        <p>align-self: center</p>
+        <section class="container column">
+         <div class="item center">AAA</div>
+         <div class="item center">123</div>
+         <div class="item center">Lorem Ipsum blablabla</div>
+         <div class="item center ali">Não sei.</div>
+         </section>
+
+         <p>align-self: flex-start</p>
+        <section class="container column">
+         <div class="item start">AAA</div>
+         <div class="item start">123</div>
+         <div class="item start">Lorem Ipsum blablabla</div>
+         <div class="item start">Não sei.</div>
+         </section>
+
+         <p>align-self: flex-end</p>
+        <section class="container column">
+         <div class="item end">AAA</div>
+         <div class="item end">123</div>
+         <div class="item end">Lorem Ipsum blablabla</div>
+         <div class="item end">Não sei.</div>
+         </section>
+
+         <p>align-self: stretch</p>
+        <section class="container column">
+         <div class="item stretch">AAA</div>
+         <div class="item stretch">123</div>
+         <div class="item stretch">Lorem Ipsum blablabla</div>
+         <div class="item stretch">Não sei.</div>
+         </section>
+
+         <p>align-self: baseline</p>
+         <section class="container column">
+          <div class="item baseline">AAA</div>
+          <div class="item baseline">123</div>
+          <div class="item baseline">Lorem Ipsum blablabla</div>
+          <div class="item baseline">Não sei.</div>
+          </section>
+
+          <p>align-self: mix</p>
+          <section class="container column">
+           <div class="item strech">AAA</div>
+           <div class="item start">123</div>
+           <div class="item baseline">Lorem Ipsum blablabla</div>
+           <div class="item end">Não</div>
+           </section>
+</body>
+</html>
