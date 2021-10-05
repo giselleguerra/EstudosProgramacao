@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "open sans", sans-serif;
+  font-family: 'open sans', sans-serif;
 }
 
 .flex-container {
@@ -9,6 +9,7 @@
   max-width: 992px;
   margin: auto;
   width: 100%;
+  min-width: 320px;
 }
 
 .btn {
@@ -18,15 +19,20 @@
   border-radius: 30px;
   width: 220px;
   text-decoration: none;
-  height: 30px;
+  height: 50px;
   display: block;
   line-height: 50px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-/* HEADER + MENU */
+div img{
+  display: block;
+  width: 100%;
+}
 
+
+/* HEADER + MENU */
 header {
   background-color: #122a57;
   height: 100px;
@@ -42,7 +48,7 @@ header .menu {
 header .list-items {
   display: flex;
   width: 100%;
-  max-width: 250px;
+  max-width: 260px;
   justify-content: space-between;
   align-items: center;
 }
@@ -62,12 +68,9 @@ ul li a {
 }
 
 
-
-
 /* APRESENTAÇÃO */
-
 .apresentacao {
-  height: 100vh;
+  height: 70vh;
   align-items: center;
   justify-content: space-between;
   display: flex;
@@ -80,7 +83,8 @@ ul li a {
 
 .texto-apresentacao h1 {
   color: #122a57;
-  font-size: 32px;
+  font-size: 48px;
+  margin-bottom: 10px;
 }
 
 .texto-apresentacao p {
@@ -89,13 +93,17 @@ ul li a {
   margin-bottom: 10px;
 }
 
-/* QUEM SOMOS */
+.apresentacao img{
+  min-width: 420px;
+}
 
+
+/* QUEM SOMOS */
 #quem-somos {
   align-items: center;
   justify-content: space-between;
-  display: flex;
   flex-direction: row-reverse;
+  height: 70vh;
 }
 
 .quem-somos-texto {
@@ -106,64 +114,268 @@ ul li a {
 .quem-somos-texto h2 {
   color: #122a57;
   font-size: 32px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.quem-somos-texto h2::before{
+  content: "";
+  height: 50px;
+  width: 5px;
+  margin-right: 5px;
+  background-color: #122a57;
+  position: relative;
 }
 
 .quem-somos-texto p {
-  font-size: 16px;
   color: #122a57;
+  margin-bottom: 10px;
+  width: 90%;
 }
 
-/* SERVIÇOS */
+#quem-somos img{
+  min-width: 420px;
+}
 
-#servicos {
-  display: flex;
+
+/* SERVIÇOS */
+.container-externo {
   align-items: center;
   background-color: #122a57;
   color: #fff;
-  height: 600px;
+  height: 500px;
+  width: 100%;
 }
 
-#servicos .servicos {
-  display: flex;
-  margin: 20px;
-  width: 100%;
-  justify-content: space-between;
-  padding:50px;
+#servicos {
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 
 #servicos h2 {
   color: #fff;
   font-size: 32px;
-  margin: 100px;
+  margin-bottom: 30px;
 }
 
-.servicos .servicos-itens {
+.list-servicos{
   display: flex;
-  align-content: space-between;
-  flex-direction: column;
-  align-content: center;
+  justify-content: space-between;
 }
 
-.servicos .servicos-itens a {
+.list-servicos .servicos-itens {
+  text-align: center;
+}
+
+.list-servicos .servicos-itens a {
   text-decoration: none;
   color: #122a57;
   background-color: #fff;
   text-align: center;
-  border-radius: 30%;
+  border-radius: 30px;
   width: 220px;
-  height: 30px;
+  height: 50px;
   display: block;
   line-height: 50px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 20px;
   font-weight: 700;
+  padding: 5px 0;
+  font-size: 16px;
 }
 
-.servicos .servicos-itens p {
-  text-align: center;
-  margin: 10px;
+.list-servicos .servicos-itens p{
+  font-weight: 700;
+  font-size: 18px;
+  padding-top: 20px;
+} 
 
+.servicos-itens img{
+  width: 80%;
+  margin: auto;
 }
+
+
 /* PLANOS */
+#planos{
+  flex-direction: column;
+  min-height: 65vh;
+  padding-top: 50px;
+}
+
+#planos h2{
+  font-size: 32px;
+  color: #122a57;
+}
+.list-planos{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.item-plano{
+  flex: 1;
+  border: 5px solid #122a57;
+  margin-right: 20px;
+  padding: 10px;
+  max-width: 240px;
+}
+
+.item-plano h3{
+  color: #122a57;
+  font-size: 24px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.item-plano h3::after{
+  content: "";
+  background-color: #122a57;
+  width: 100%;
+  height: 3px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.item-plano ul li::before{
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #122a57;
+  margin-right: 5px;
+}
+
+.item-plano ul{
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.item-plano ul li{
+  padding: 5px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.item-plano .btn{
+  margin: auto;
+  margin-bottom: 20px;
+}
+
 
 /* FOOTER */
+footer{
+  background-color: #122a57;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+footer .footer{
+  justify-content: space-between;
+  color:#fff
+}
+
+
+/* MOBILE */
+
+@media(max-width: 992px){
+  
+  .flex-container{
+    flex-direction: column;
+  }
+
+  .btn{
+    width: 50%;
+  }
+
+
+  /*HEADER + MENU*/
+  header .list-items {
+  padding-top: 5px;
+  }
+
+
+  /*APRESENTAÇÃO */
+  .apresentacao{
+    flex-direction: column-reverse;
+    height: auto;
+    align-items: flex-start;
+  }
+
+  .apresentacao img{
+    min-width: 320px;
+    margin: auto;
+    padding: 5px;
+  }
+
+  .apresentacao .texto-apresentacao{
+    margin: 10px;
+  }
+
+
+  /*QUEM SOMOS*/
+  #quem-somos{
+    flex-direction: column-reverse;
+  }
+
+  #quem-somos img{
+    min-width: 320px;
+    margin: auto;
+  }
+
+
+  /*SERVIÇOS*/
+.container-externo{
+  height: auto;
+  }
+
+.list-servicos{
+  flex-direction: column;
+  
+}
+.list-servicos .servicos-itens{
+  margin:5px;
+}
+.servicos-itens img{
+  width: 15%;
+  margin: auto;
+  }
+
+.list-servicos .servicos-itens a{
+  width: 50%;
+  justify-items: center;
+  margin: auto;
+  margin-top: 10px;
+}
+ 
+
+/*PLANOS*/
+.list-planos{
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.list-planos .item-plano{
+  max-width: 90%;
+  margin: auto;
+  width: 100%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  
+}
+
+
+/*FOTTER*/
+footer{
+  margin: auto;
+  width: 100%;
+  padding: 11px;
+}
+
+
+}
