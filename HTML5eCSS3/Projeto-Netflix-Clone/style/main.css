@@ -1,0 +1,334 @@
+/*GERAIS */
+
+:root {
+  --vermelha: #e50914;
+  --preta: #141414;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;  
+}
+
+body {
+  background-color: var(--preta);
+  color: white;
+  font-family: "Arial", Times, serif;
+}
+
+/* HEADER MENU */
+
+header .container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content:left;
+  }
+
+header .logo {
+  color: var(--vermelha);
+  font-size: 40px;
+  font-family: "Arial Black", Times;
+  margin-left: 5px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+header .logo:hover{
+  transform: scale(0.9);
+}
+
+header nav a {
+  color: #aaa;
+  margin: 10px;
+  text-decoration: none;  
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+
+/*FILME PRINCIPAL*/
+
+.filme-principal {
+  background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/img/filme-principal-o-retrato-de-uma-dama-em-chamas.jpg);
+  font-size: 16px;  
+
+  background-position: center;
+  background-size: cover;
+  height: 85vh; 
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content:flex-end;  
+}
+
+.filme-principal .titulo {
+  font-family: Arial, sans-serif;
+  font-size: 50px;  
+  margin-top: 15px;
+}
+
+.filme-principal .descricao {
+  font-size: 25px;
+  margin-top: 10px;  
+  text-justify: newspaper;
+}
+
+.botao {
+  border: none;
+  border-radius: 5px;
+
+  font-size: 12px;
+  margin-right: 15px;
+  padding: 15px 30px;
+  
+  cursor: pointer;
+  transition: 0.3s ease all;
+
+  margin-bottom: 40px;
+  margin-top: 15px;
+}
+
+#bt1{
+  background-color: white;
+  color: black;
+}
+
+#bt2{
+  background-color: rgba(105, 105, 105, 0.5);
+  color: white;
+}
+
+a{  
+  text-decoration: none;
+}
+
+#bt1:hover {
+  background-color: rgb(124, 120, 120);
+  color: black;
+}
+
+#bt2:hover {
+  background-color: rgba(105, 105, 105, 0.3);
+}
+
+.botao i {
+  margin-right: 8px;
+}
+
+
+
+/*CARROSSEL*/
+
+.subtitulo{
+  font-size: 1.2em;
+
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-top: 50px;
+  
+  width: 50px;
+}
+.subtitulo a{
+  color: rgb(211, 210, 210);
+  text-decoration: none;
+}
+
+.subtitulo a h2:hover{
+  color:white;
+  cursor:pointer;
+}
+
+.carrossel-filmes {
+  margin-top: 5px;
+}
+
+#items{
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;  
+}
+
+.container {
+  margin-left: 20px;
+}
+
+.filme-principal .container {
+  width: 70%;
+}
+
+.box-filme {
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  width: 100%; 
+}
+
+
+.item:hover{
+  border: 5px solid black;
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
+
+
+/*RODAPE*/
+
+footer{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 30px;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 95vw;  
+}
+
+.rdtext p{
+  font-size: 1.1em;
+  font-family: sans-serif;
+  margin-right: 5px;
+}
+
+.rdtext p:hover{
+  transform: scale(1.1);
+}
+
+.bt{
+  background-color: var(--preta);
+  border:none;
+  color: white;
+  margin: 10px;
+  transform: scale(1.5);  
+}
+
+.bt:hover{
+  border:none;
+  cursor: pointer;
+  transform: scale(2);
+}
+
+
+
+/*FILME PRINCIPAL PG*/
+.container_filme{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 6vh 40vh 49vh 5vh;
+  grid-template-areas: "header header" "aside main" "section section" "footer footer"; 
+}
+
+.container_filme header{
+  grid-area: header;
+  }
+
+.container_filme main{
+  grid-area: main;
+  margin-top: 20px;
+}
+.titulo1{
+  display: flex;
+  align-items:baseline;
+  margin: 10px;  
+}
+
+.titulo1 p{
+  color: #aaa;
+  font-size: 1.6em;
+  margin-left: 5px;  
+}
+
+.detalhes1{
+  display: flex;
+  justify-content: flex-start;
+  margin:10px;
+}
+
+.detalhes1 i{
+  margin-left: 5px;
+  margin-right: 5px;
+  transform: scale(0.5);
+}
+
+.descricao1{
+  display: flex;
+  flex-direction: column;
+}
+
+.frase1{
+  color: #aaa;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.snopse1{
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  margin-left: 10px;  
+}
+
+.texto1{
+  font-size: 1.1em;
+  margin-left: 10px;
+  margin-bottom: 10px;  
+  padding-right: 60px;
+}
+
+.container_filme aside{
+  grid-area: aside;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  margin: 10px;
+  }
+
+.autor1{
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.d1{
+  font-size: 14px;
+}
+
+.container_filme section{
+  grid-area: section;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;  
+  margin: 20px;
+  padding: 20px;
+}
+
+.carrossel1{
+  margin-top: 50px;
+  width: 70%;
+}
+
+.text3{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.info1{
+  font-size: 1.2em;
+}
+
+.elenco1{
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.container_filme footer{
+  grid-area: footer;
+  margin-bottom: 20px;
+  margin-top: 05px;
+}
