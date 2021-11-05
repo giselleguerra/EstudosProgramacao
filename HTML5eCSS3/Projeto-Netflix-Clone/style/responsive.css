@@ -1,10 +1,20 @@
-@media  screen and (max-width: 700px) {
+@media screen and (max-width: 1084){
+
+    .container_filme{
+        display: grid;
+        grid-template-columns: 200px 1fr 200px;
+        grid-template-rows: auto 1fr auto;
+        height: 100vh;
+        object-fit: fill;
+      }
+
+}
+
+@media screen and (max-width: 700px) {
 
     header .container{
         display: flex;
-        flex-direction: column;
-        
-        
+        flex-direction: column;       
     }
 
     .filme-principal .descricao {
@@ -20,9 +30,6 @@
         width: 90vw;
         margin-bottom: 10px;
     }
-
-
-
 }
 
 @media screen and (min-width:1000px){

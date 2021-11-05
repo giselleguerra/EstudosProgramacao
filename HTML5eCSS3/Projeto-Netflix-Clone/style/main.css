@@ -170,9 +170,9 @@ a{
 
 
 .item:hover{
-  border: 5px solid black;
-  transform: scale(1.2);
-  transition: 0.5s;
+  border: none;
+  transform: scale(0.97);
+  transition: 0.3s;
 }
 
 
@@ -181,17 +181,43 @@ a{
 
 footer{
   display: flex;
-  align-items: center;
   flex-direction: row;
-  justify-content: flex-end;
-  height: 30px;
-  margin-bottom: 10px;
-  padding: 5px;
-  width: 95vw;  
+  align-items: flex-end;
+  justify-content: space-evenly;
+  width: 95vw; 
+  color: #aaa; 
+  height: 100px;
+  margin-top: 30px;
 }
 
+.rodapelist{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.gg{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.listrd{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.listrd p{
+  font-size: 0.8em;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 100px;
+
+}
+.listrd p:hover{
+  cursor: pointer;
+}
 .rdtext p{
-  font-size: 1.1em;
+  font-size: 0.7em;
   font-family: sans-serif;
   margin-right: 5px;
 }
@@ -203,7 +229,7 @@ footer{
 .bt{
   background-color: var(--preta);
   border:none;
-  color: white;
+  color: #aaa;
   margin: 10px;
   transform: scale(1.5);  
 }
